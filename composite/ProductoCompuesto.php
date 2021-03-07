@@ -8,13 +8,21 @@ class ProductoCompuesto extends ProductoAbstracto
     private $productos;
 
     public function __construct($nombre) 
-    {
-        //super(name, 0);
+    {  
         parent::__construct($nombre, 0);
         $this->productos = new \SplObjectStorage();
     }
 
-    //@Override
+    public function getNombre() 
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre($nombre) 
+    {
+        $this->nombre = $nombre;
+    }
+    
     public function getPrecio() 
     {
         $precio = 0;
@@ -24,12 +32,13 @@ class ProductoCompuesto extends ProductoAbstracto
         return $precio;
     }
 
-    //@Override
     public function setPrecio($precio) 
     {
+        echo "Operacion no soportada";
         //throw new UnsupportedOperationException();
     }
 
+    
     public function agregarProducto($producto) 
     {
         //$this->arrayProductos[] = $producto;

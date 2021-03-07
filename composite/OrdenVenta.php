@@ -1,5 +1,7 @@
 <?php
 
+require_once "ProductoAbstracto.php";
+
 class OrdenVenta {
     
     public $idOrdenVenta;
@@ -54,13 +56,13 @@ class OrdenVenta {
     }
 
 
-    public function agregarProducto($producto) 
+    public function agregarProducto(ProductoAbstracto $producto) 
     {
         //$this->arrayProductos[] = $producto;
         $this->arrayProductos->attach($producto);        
     }
  
-    public function eliminarProducto($producto) 
+    public function eliminarProducto(ProductoAbstracto $producto) 
     {
         $this->arrayProductos->detach($producto);
     }

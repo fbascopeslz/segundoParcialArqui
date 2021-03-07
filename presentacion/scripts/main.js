@@ -145,7 +145,7 @@ function confirmarPedido(e) {
 
 	    success: function(datos)
 	    {                    
-			bootbox.alert("El precio total del Pedido es: " + datos);
+			bootbox.alert("El precio total de la Orden de Venta es: " + datos);
 			$("#btnIniciarOrden").prop("disabled", false);
 	    }
 	});	

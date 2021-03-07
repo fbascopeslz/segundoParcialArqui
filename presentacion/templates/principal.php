@@ -12,7 +12,7 @@ require 'header.php';
               <div class="col-md-12">
                   <div class="box">
                     <div class="box-header with-border">
-                          <h1 class="box-title">Orden de Pedido</h1>
+                          <h1 class="box-title">Orden de Venta</h1>
                         <div class="box-tools pull-right">
                         </div>
                     </div>

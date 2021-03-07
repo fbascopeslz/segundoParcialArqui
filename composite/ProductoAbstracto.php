@@ -7,30 +7,28 @@ abstract class ProductoAbstracto
 
     public function __construct($nombre, $precio)
     {
-        //super();
         $this->nombre = $nombre;
         $this->precio = $precio;        
     }
 
-    public function getNombre() 
+    public function agregarProducto(ProductoAbstracto $producto) 
     {
-        return $this->nombre;
+      
+    }
+ 
+    public function eliminarProducto(ProductoAbstracto $producto) 
+    {
+        
     }
 
-    public function setNombre($nombre) 
-    {
-        $this->nombre = $nombre;
-    }
+    abstract public function getNombre();
+    
+    abstract public function setNombre($nombre);
 
-    public function getPrecio() 
-    {
-        return $this->precio;
-    }
+    abstract public function getPrecio();
 
-    public function setPrecio($precio) 
-    {
-        $this->precio = $precio;
-    }
+    abstract public function setPrecio($precio);
+
 }
 
 ?>
