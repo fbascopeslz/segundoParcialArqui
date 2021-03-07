@@ -29,16 +29,16 @@ require 'header.php';
                           <input type="text" class="form-control" name="cliente" id="cliente" required>
                         </div>
                         <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">                          
-                          <button class="btn btn-primary" type="button" id="btnIniciarOrden"><i class="fa fa-save"></i> Iniciar Orden</button>
+                          <button class="btn btn-primary" type="button" id="btnIniciarOrden"><i class="fa fa-play"></i> Iniciar Orden</button>
                         </div>
                       
                         <div id="tablaDePedido">                        
                           <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">                                                   
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProductoSimple">
-                              <i class="fa fa-save"></i> Agregar Produco Simple
+                              <i class="fa fa-plus-square"></i> Agregar Produco Simple
                             </button>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCombo">
-                              <i class="fa fa-save"></i> Agregar Combo
+                              <i class="fa fa-bars"></i> Agregar Combo
                             </button>
                           </div>
                           
@@ -60,12 +60,12 @@ require 'header.php';
                           </div>
                         
                           <div class="col-lg-10 col-sm-10 col-md-10 col-xs-10">
-                            <button class="btn btn-primary" type="submit" id="btnConfirmarPedido"><i class="fa fa-save"></i> Confirmar Pedido</button>
+                            <button class="btn btn-primary" type="submit" id="btnConfirmarPedido"><i class="fa fa-shopping-cart"></i> Confirmar Orden</button>
                           </div>
 
                           <div class="col-lg-2 col-sm-2 col-md-2 col-xs-2">                            
                             <button type="button" class="btn btn-primary" id="btnMetodoDePago" data-toggle="modal" data-target="#modalMetodoPago">
-                              <i class="fa fa-save"></i> Metodo de Pago
+                              <i class="fa fa-usd"></i> Metodo de Pago
                             </button>                            
                           </div>                                            
 
